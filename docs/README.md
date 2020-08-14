@@ -1,7 +1,10 @@
 ---
 home: true
-heroImage: /home2.png
 heroText: 贺俊兰的前端记录
+bgImage: '/logo.jpg'
+bgImageStyle: {
+  height: '350px'
+}
 tagline: 一点一滴都是进步
 actionText: 开启脱发之路 →
 actionLink: /document/vue/
