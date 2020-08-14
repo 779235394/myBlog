@@ -10,7 +10,7 @@ module.exports = {
         [
             'link', {
                 rel: 'icon',
-                href: './public/timg.gif'
+                href: '/timg.gif'
             }
         ],
         [
