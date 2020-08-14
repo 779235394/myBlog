@@ -1,3 +1,11 @@
+---
+title: JavaScript小技巧
+categories:
+ - JavaScript
+tags:
+ - JavaScript
+---
+
 # JavaScript小技巧
 ## 过滤 
 

@@ -1,3 +1,11 @@
+---
+title: node
+categories:
+ - node
+tags:
+ - node
+---
+
 # 总结
 <img :src="$withBase('/home.gif')" alt="foo">
 
