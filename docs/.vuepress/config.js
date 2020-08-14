@@ -5,6 +5,21 @@ module.exports = {
     keywords: "贺俊兰博客", // 关键字
     evergreen: true,
     theme: 'reco',
+
+    head: [
+        [
+            'link', {
+                rel: 'icon',
+                href: './public/timg.gif'
+            }
+        ],
+        [
+            'meta', {
+                name: 'viewport',
+                content: 'width=device-width,initial-scale=1,user-scalable=no'
+            }
+        ]
+    ],
     locales: {
         '/': {
             lang: 'zh-CN'
@@ -17,7 +32,7 @@ module.exports = {
             "ribbon",
             {
                 size: 90,     // width of the ribbon, default: 90
-                opacity: 0.5, // opacity of the ribbon, default: 0.3
+                opacity: 0.3, // opacity of the ribbon, default: 0.3
                 zIndex: -1    // z-index property of the background, default: -1
             }
         ],
@@ -27,6 +42,13 @@ module.exports = {
                 size: 5,                    // size of the particle, default: 2
                 shape: ['star'],  // shape of the particle, default: 'star'
                 zIndex: 999999999           // z-index property of the canvas, default: 999999999
+            }
+        ],
+        [
+            "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+            {
+                theme: ['haruto'],
+                clean: true
             }
         ]
     ]
