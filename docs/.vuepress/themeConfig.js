@@ -1,23 +1,26 @@
 const getDocPath = require('./getDocPath')
 module.exports = {
   author: '前端小菜-贺俊兰',
+  type: 'blog',
+  logo: '/timg.gif',
+  authorAvatar: '/timg.gif',
   // 博客配置
   blogConfig: {
     category: {
       icon: 'reco-category',
       location: 2,     // 在导航栏菜单中所占的位置，默认2
-      text: 'Category' // 默认文案 “分类”
+      text: '分类' // 默认文案 “分类”
     },
     tag: {
       icon: 'reco-tag',
       location: 3,     // 在导航栏菜单中所占的位置，默认3
-      text: 'Tag'      // 默认文案 “标签”
+      text: '标签'      // 默认文案 “标签”
     }
   },
   nav: [
     {
       icon: 'reco-home',
-      text: 'Home',
+      text: '主页',
       link: '/'
     },
     // {
