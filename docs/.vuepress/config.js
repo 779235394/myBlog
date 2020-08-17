@@ -50,6 +50,22 @@ module.exports = {
                 theme: ['haruto'],
                 clean: true
             }
+        ],
+        [
+            'vuepress-plugin-comment',
+            {
+                choosen: 'valine',
+                options: {
+                    el: '#valine-vuepress-comment',
+                    appId: 'vehwqCAtjdxMXn8OIqrhnzD3-gzGzoHsz',// your appId
+                    appKey: '7wV5i6Cmn1hpzlRJPzqLsG1r', // your appKey
+                    placeholder: '留下宝贵的建议哦',
+                    path: '<%- window.location.pathname %>',
+                    lang: 'zh-CN',
+                    pageSize: '5',
+                    enableQQ: true
+                }
+            }
         ]
     ]
 }

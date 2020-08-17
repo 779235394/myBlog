@@ -4,6 +4,7 @@ module.exports = {
   type: 'blog',
   logo: '/timg.gif',
   authorAvatar: '/timg.gif',
+  
   // 博客配置
   blogConfig: {
     category: {
