@@ -6,7 +6,7 @@ bgImageStyle: {
   height: '350px'
 }
 # navbar: false
-# tagline: 一点一滴都是进步
+tagline: 一点一滴都是进步
 # actionText: 开启脱发之路 →
 # actionLink: /document/vue/
 # features:
