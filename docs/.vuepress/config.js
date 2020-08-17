@@ -5,7 +5,6 @@ module.exports = {
     keywords: "贺俊兰博客", // 关键字
     evergreen: true,
     theme: 'reco',
-
     head: [
         [
             'link', {
