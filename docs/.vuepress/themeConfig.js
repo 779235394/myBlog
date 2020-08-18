@@ -4,7 +4,7 @@ module.exports = {
   type: 'blog',
   logo: '/timg.gif',
   authorAvatar: '/timg.gif',
-  
+
   // 博客配置
   blogConfig: {
     category: {
@@ -24,43 +24,12 @@ module.exports = {
       text: '主页',
       link: '/'
     },
-    // {
-    //   icon: 'reco-home',
-    //   text: 'vue',
-    //   link: '/document/vue/'
-    // },
-    // {
-    //   icon: 'reco-home',
-    //   text: 'git',
-    //   link: '/document/git/'
-    // },
-    // {
-    //   icon: 'reco-home',
-    //   text: 'javascript',
-    //   link: '/document/javascript/'
-    // },
     {
       icon: 'reco-github',
       text: 'github',
       link: 'https://github.com/779235394'
     },
   ],
-  // sidebarDepth: 2,
-  // sidebar: [{
-  //   title: 'Vue',
-  //   collapsable: true,
-  //   children: getDocPath('document/vue')
-  // }, {
-  //   title: 'git',
-  //   collapsable: true,
-  //   children: getDocPath('document/git')
-  // }, {
-  //   title: 'javascript',
-  //   collapsable: true,
-  //   children: getDocPath('document/javascript')
-  // }, {
-  //   title: 'node',
-  //   collapsable: true,
-  //   children: getDocPath('document/node')
-  // }]
+  sidebarDepth: 2,
+  sidebar: require('./sidebarConf')
 }
