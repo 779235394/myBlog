@@ -24,8 +24,10 @@ var filehelper = {
                 }
             }
         })
-        filenames.sort();
-        console.log(filenames)
+        filenames.sort(function (a, b) {
+            return a.split('.')[0] - b.split('.')[0]
+        });
+        //console.log(filenames)
         return filenames;
     }
 }
