@@ -9,5 +9,5 @@ module.exports = {
     '/document/javascript/': utils.genSidebar('javascript', filehelper.getFileName(docs + "/document/javascript/"), false),
     '/document/node/': utils.genSidebar('node', filehelper.getFileName(docs + "/document/node/"), false),
     '/document/git/': utils.genSidebar('git', filehelper.getFileName(docs + "/document/git/"), false),
-    '/document/algorithm/': utils.genSidebar('algorithm', filehelper.getFileName(docs + "/document/algorithm/"), false),
+    '/document/algorithm/': utils.genSidebar('LeetCode 记录', filehelper.getFileName(docs + "/document/algorithm/"), false),
 };

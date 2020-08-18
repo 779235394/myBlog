@@ -25,6 +25,7 @@ var filehelper = {
             }
         })
         filenames.sort();
+        console.log(filenames)
         return filenames;
     }
 }
