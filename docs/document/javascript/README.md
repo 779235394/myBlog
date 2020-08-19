@@ -1,5 +1,6 @@
 ---
 title: JavaScript小技巧
+date: 2020-07-10
 categories:
  - JavaScript
 tags:
