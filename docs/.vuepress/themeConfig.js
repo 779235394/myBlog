@@ -25,6 +25,11 @@ module.exports = {
       link: '/'
     },
     {
+      text: '时间轴',
+      link: '/timeLine/',
+      icon: 'reco-date'
+    },
+    {
       icon: 'reco-github',
       text: 'github',
       link: 'https://github.com/779235394'
