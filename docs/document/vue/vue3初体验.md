@@ -5,6 +5,7 @@ categories:
  - VUE
 tags:
  - VUE
+image: /vuetimg6.jpg
 ---
 # vue3初体验
 ## vue3的三种体验姿势

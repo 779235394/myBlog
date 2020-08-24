@@ -5,6 +5,7 @@ categories:
  - 其他
 tags:
  - CSS
+image: /vuetimg3.jpeg
 ---
 
 # 时间轴样式
