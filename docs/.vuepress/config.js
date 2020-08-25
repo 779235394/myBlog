@@ -25,6 +25,9 @@ module.exports = {
         }
     },
     themeConfig: themeConfig,
+    markdown: {
+        lineNumbers: true
+    },
     displayAllHeaders: false,
     plugins: [
         [

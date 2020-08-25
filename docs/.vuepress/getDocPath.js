@@ -4,6 +4,10 @@
    */
 const fs = require('fs')
 const path = require('path')
+
+// 排除检查的文件
+var excludes = ['.DS_Store']
+
 function getDocPath(title, collapsable, relateivePath) {
   const absolutePath = path.join(__dirname, '..' + relateivePath)
   const files = fs.readdirSync(absolutePath)
@@ -13,15 +17,17 @@ function getDocPath(title, collapsable, relateivePath) {
     return a.split('.')[0] - b.split('.')[0];
   });
   arr.forEach(function (item) {
-    let stat = fs.lstatSync(absolutePath + '/' + item)
-    if (item == 'README.md') {
-      components.unshift(relateivePath)
-    } else if (!stat.isDirectory()) {
-      let res = item.replace('.md', '');
-      components.push(relateivePath + res)
-    } else {
-      let res = item.replace('.md', '');
-      getDocPath(relateivePath + res)
+    if (excludes.indexOf(item) < 0) {
+      let stat = fs.lstatSync(absolutePath + '/' + item)
+      if (item == 'README.md') {
+        components.unshift(relateivePath)
+      } else if (!stat.isDirectory()) {
+        let res = item.replace('.md', '');
+        components.push(relateivePath + res)
+      } else {
+        let res = item.replace('.md', '');
+        getDocPath(relateivePath + res)
+      }
     }
   })
   let frame = {

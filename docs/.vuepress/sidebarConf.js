@@ -13,9 +13,9 @@ module.exports = {
         getDocPath('node', true, '/document/node/'),
     ],
     '/document/algorithm/': [
-        getDocPath('algorithm', true, '/document/algorithm/'),
+        getDocPath('LeetCode', true, '/document/algorithm/'),
     ],
     '/document/other/': [
         getDocPath('other', true, '/document/other/'),
-    ],
+    ]
 };
