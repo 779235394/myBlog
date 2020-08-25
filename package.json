@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "vue-particles": "^1.0.9",
     "vuepress": "^1.5.3",
     "vuepress-plugin-cursor-effects": "^1.0.0",
     "vuepress-plugin-ribbon": "^1.0.2",
