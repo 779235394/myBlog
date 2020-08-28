@@ -11,7 +11,7 @@ image: /vuetimg5.jpeg
 ## 过滤 
 
 Set类型是在 ES6中新增的，它类似于数组，但是成员的值都是唯一的，没有重复的值。结合扩展运算符（...）我们可以创建一个新的数组，达到过滤原数组重复值的功能。
-```
+``` js
 const array=[1,2,3,4,5,2,3,4,5,6]
 const arrayFilter =[...new Set(array)];
 console.log(arrayFilter) //
@@ -21,7 +21,7 @@ console.log(arrayFilter) //
 ## 全部替换
 
 我们知道 string.replace() 函数仅替换第一次出现的情况,可以通过在正则表达式的末尾添加 /g来替换所有出现的内容。
-```
+``` js
     var example = "potato potato";
     console.log(example.replace(/pot/, "tom")); 
     // "tomato potato"
@@ -31,7 +31,7 @@ console.log(arrayFilter) //
 ```
 
 ## 随机排列数组元素
-```
+``` js
     var my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     console.log(my_list.sort(function() {
         return Math.random() - 0.5
@@ -40,7 +40,7 @@ console.log(arrayFilter) //
 ```
 
 ## 展开多维数组
-```
+``` js
 	var entries = [1, [2, 5], [6, 7], 9];    
   var flat_entries = [].concat(...entries); 
   // [1, 2, 5, 6, 7, 9]
@@ -49,7 +49,7 @@ console.log(arrayFilter) //
 ## 简写属性
 
 在es5的时候是这样写的
-```
+``` js
  function person (x,y) {
    return {
      x:x,
@@ -60,7 +60,7 @@ console.log(arrayFilter) //
 
 现在es6了，可以用简写的方式这样写
 
-```
+``` js
   function person (x,y) {
    return {
      x,
@@ -74,7 +74,7 @@ console.log(arrayFilter) //
 
   解构赋值有利于开发者的本人心理健康，常见的解构赋值如下
 
-  ```
+  ``` js
     function person ( config ){
       if( config.a ) { ... }
       if( config.b ) { ... }
@@ -99,7 +99,7 @@ console.log(arrayFilter) //
 :::
 
 
-```
+``` js
   let obj={'0':'aaa','1':'bbb',length:2}
 
   console.log(Array.from(obj)) 
@@ -108,7 +108,7 @@ console.log(arrayFilter) //
 
 比如说常见的封装组件，操作DOM的时候，经常会接收arguments,那这个时候我们就可以利用这个方法转数组操作
 
-```
+``` js
   let args=Array.from(arguments)
 ```
 
@@ -116,7 +116,7 @@ Array.from对 String、Set、map等拥有迭代器的对象也可以进行转换
 
 Array.from还接收第二个参数，作用有点类似与map的方法，就是对每个元素都可以进行处理
 
-```
+``` js
   let list=[1,3,5]
   Array.form( list , x = > x + 1 )
   //[2,4,6]
@@ -130,7 +130,7 @@ Array.from还接收第二个参数，作用有点类似与map的方法，就是�
 
 使用给定值填充数组
 
-```
+``` js
   [1,2,3,4,5,6].fill('a')
   // [a,a,a,a,a,a]
 
@@ -139,7 +139,7 @@ Array.from还接收第二个参数，作用有点类似与map的方法，就是�
 ```
  fill方法用于数组的初始化非常方便，当然fill还可以接收第二个和第三个参数，也就是起始位置和结束位置，用于指定填充范围
 
-```
+``` js
   [1,2,3,4,5,6].fill('a',2,4)
   // [1,2,a,a,5,6]
 ```
@@ -155,7 +155,7 @@ fill从2号开始到4号之前，全覆盖
   item,index,array =>数组项，索引，原数组
 :::
 
-```
+``` js
   [1,2,3,4,5,6].find((item,index,array)=>{
     return item>5
   })
@@ -168,7 +168,7 @@ fill从2号开始到4号之前，全覆盖
   findIndex与find方法很相似,返回第一个满足条件的元素的位置,如果都不符合则返回-1
 :::
 
-```
+``` js
   [1,2,3,4,5,6].findIndex((item,index,array)=>{
     return item>3
   })
@@ -185,7 +185,7 @@ fill从2号开始到4号之前，全覆盖
 
 没有该方法时，以前我们用的时数组的indexof来检查是否包含某一特定值
 
-```
+``` js
  if(arrar.indexof('a')>-1){
 
  }
@@ -199,13 +199,13 @@ fill从2号开始到4号之前，全覆盖
 
 2.它的内部使用的是严格相等运算符(===),这样会导致对NaN的误判
 
-```
+``` js
  [NaN].indexOf(NaN)
  // -1
 ```
 
 includes使用的是不一样的判断方法，所以就没有这样的问题
-```
+``` js
  [NaN].includes(NaN)
  // true
 ```
