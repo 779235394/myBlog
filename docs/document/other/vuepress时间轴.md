@@ -4,14 +4,16 @@ date: 2020-08-19
 categories:
  - 其他
 tags:
- - CSS
+ - vuepress
 image: /vuetimg3.jpeg
 ---
 
 # 时间轴样式
 
 ## 效果
-[点击查看时间轴效果](/timeLine/)
+[时间轴效果](/timeLine/)
+
+点击查看时间轴效果
 
 ## 配置
 先参考vuepress-theme-reco文档时间轴配置
