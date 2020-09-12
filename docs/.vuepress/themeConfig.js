@@ -1,3 +1,8 @@
+/*
+ * @Descripttion: 
+ * @Author: hejunlan
+ * @Date: 2020-08-29 10:08:35
+ */
 const getDocPath = require('./getDocPath')
 module.exports = {
   author: '前端小菜-贺俊兰',
@@ -29,11 +34,11 @@ module.exports = {
       link: '/timeLine/',
       icon: 'reco-date'
     },
-    {
-      icon: 'reco-github',
-      text: 'github',
-      link: 'https://github.com/779235394'
-    },
+    // {
+    //   icon: 'reco-github',
+    //   text: 'github',
+    //   link: 'https://github.com/779235394'
+    // },
   ],
   sidebarDepth: 2,
   sidebar: require('./sidebarConf')
