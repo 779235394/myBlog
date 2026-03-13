@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue组件库搭建 | 葵花宝典</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/myBlog/timg.gif">
+    <meta name="description" content="专注前端开发技术积累,积硅步,至千里">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/myBlog/assets/css/0.styles.cae12873.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.45a667c6.js" as="script"><link rel="preload" href="/myBlog/assets/js/3.d543a788.js" as="script"><link rel="preload" href="/myBlog/assets/js/1.3e1ffb60.js" as="script"><link rel="preload" href="/myBlog/assets/js/32.1681c8f8.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.c9b56105.js"><link rel="prefetch" href="/myBlog/assets/js/11.37b335ea.js"><link rel="prefetch" href="/myBlog/assets/js/12.a8ed465a.js"><link rel="prefetch" href="/myBlog/assets/js/13.0eb56eab.js"><link rel="prefetch" href="/myBlog/assets/js/14.eb663d32.js"><link rel="prefetch" href="/myBlog/assets/js/15.e341764c.js"><link rel="prefetch" href="/myBlog/assets/js/16.06848481.js"><link rel="prefetch" href="/myBlog/assets/js/17.8dd454c7.js"><link rel="prefetch" href="/myBlog/assets/js/18.02cee19c.js"><link rel="prefetch" href="/myBlog/assets/js/19.be0f7f37.js"><link rel="prefetch" href="/myBlog/assets/js/20.4eac12bc.js"><link rel="prefetch" href="/myBlog/assets/js/21.c27252e8.js"><link rel="prefetch" href="/myBlog/assets/js/22.341daedc.js"><link rel="prefetch" href="/myBlog/assets/js/23.b709ad4c.js"><link rel="prefetch" href="/myBlog/assets/js/24.a0b4f281.js"><link rel="prefetch" href="/myBlog/assets/js/25.668c741d.js"><link rel="prefetch" href="/myBlog/assets/js/26.91d47288.js"><link rel="prefetch" href="/myBlog/assets/js/27.28130068.js"><link rel="prefetch" href="/myBlog/assets/js/28.be3e6a7d.js"><link rel="prefetch" href="/myBlog/assets/js/29.86b074c8.js"><link rel="prefetch" href="/myBlog/assets/js/30.045d51b2.js"><link rel="prefetch" href="/myBlog/assets/js/31.36d4f6b4.js"><link rel="prefetch" href="/myBlog/assets/js/33.e74fbc13.js"><link rel="prefetch" href="/myBlog/assets/js/34.098fc09b.js"><link rel="prefetch" href="/myBlog/assets/js/35.c3b5376f.js"><link rel="prefetch" href="/myBlog/assets/js/36.43258886.js"><link rel="prefetch" href="/myBlog/assets/js/37.c1d7772a.js"><link rel="prefetch" href="/myBlog/assets/js/38.b7b6ea18.js"><link rel="prefetch" href="/myBlog/assets/js/39.f536dfb5.js"><link rel="prefetch" href="/myBlog/assets/js/4.d6ab0d4c.js"><link rel="prefetch" href="/myBlog/assets/js/40.431128a5.js"><link rel="prefetch" href="/myBlog/assets/js/41.20e9196c.js"><link rel="prefetch" href="/myBlog/assets/js/42.74c01a25.js"><link rel="prefetch" href="/myBlog/assets/js/43.7c439260.js"><link rel="prefetch" href="/myBlog/assets/js/44.93108999.js"><link rel="prefetch" href="/myBlog/assets/js/45.eb50d99b.js"><link rel="prefetch" href="/myBlog/assets/js/5.f87697e2.js"><link rel="prefetch" href="/myBlog/assets/js/6.79ffee72.js"><link rel="prefetch" href="/myBlog/assets/js/7.515b7b5f.js"><link rel="prefetch" href="/myBlog/assets/js/8.0450f87d.js"><link rel="prefetch" href="/myBlog/assets/js/9.bc53e3bb.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.cae12873.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-v-6666a783><div id="particles-js" color="#ff9cc0" particleOpacity="0.7" linesColor="#dedede" particlesNumber="80" shapeType="star" particleSize="4" linesWidth="1" lineOpacity="0.4" linesDistance="150" moveSpeed="3" hoverEffect="true" hoverMode="grab" clickEffect="true" clickMode="push" class="lizi" data-v-6666a783></div> <div class="theme-container" data-v-6666a783><div data-v-6666a783><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-6666a783 data-v-6666a783><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-58d5ab76 data-v-6666a783 data-v-6666a783><h3 class="title" style="display:none;" data-v-58d5ab76 data-v-58d5ab76>葵花宝典</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><input type="password" value="" data-v-58d5ab76> <span data-v-58d5ab76>Konck! Knock!</span> <button data-v-58d5ab76>OK</button></label> <div class="footer" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><span data-v-58d5ab76><i class="iconfont reco-theme" data-v-58d5ab76></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-58d5ab76>vuePress-theme-reco</a></span> <span data-v-58d5ab76><i class="iconfont reco-copyright" data-v-58d5ab76></i> <a data-v-58d5ab76><span data-v-58d5ab76>前端小菜-贺俊兰</span>
+            
+          <!---->
+          2026
+        </a></span></div></div> <div class="hide" data-v-6666a783><header class="navbar" data-v-6666a783><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><img src="/myBlog/timg.gif" alt="葵花宝典" class="logo"> <span class="site-name">葵花宝典</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">关灯</li><li class="auto active">自动</li><li class="light">开灯</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/categories/LeetCode/" class="nav-link"><i class="iconfont undefined"></i>
+  LeetCode
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/Node/" class="nav-link"><i class="iconfont undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/VUE/" class="nav-link"><i class="iconfont undefined"></i>
+  VUE
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-6666a783></div> <aside class="sidebar" data-v-6666a783><div class="personal-info-wrapper" data-v-3eba7259 data-v-6666a783><img src="/myBlog/timg.gif" alt="author-avatar" class="personal-img" data-v-3eba7259> <h3 class="name" data-v-3eba7259>
+    前端小菜-贺俊兰
+  </h3> <div class="num" data-v-3eba7259><div data-v-3eba7259><h3 data-v-3eba7259>33</h3> <h6 data-v-3eba7259>文章</h6></div> <div data-v-3eba7259><h3 data-v-3eba7259>7</h3> <h6 data-v-3eba7259>标签</h6></div></div> <hr data-v-3eba7259></div> <nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/categories/LeetCode/" class="nav-link"><i class="iconfont undefined"></i>
+  LeetCode
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/Node/" class="nav-link"><i class="iconfont undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/categories/VUE/" class="nav-link"><i class="iconfont undefined"></i>
+  VUE
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>vue2</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myBlog/document/vue/vue2/1.vue框架简介.html" class="sidebar-link">vue框架简介</a></li><li><a href="/myBlog/document/vue/vue2/2.solt.html" class="sidebar-link">Slot简介</a></li><li><a href="/myBlog/document/vue/vue2/3.vue响应式讲解-object.html" class="sidebar-link">vue响应式讲解-object</a></li><li><a href="/myBlog/document/vue/vue2/4.vue响应式讲解-array.html" class="sidebar-link">vue响应式讲解-array</a></li><li><a href="/myBlog/document/vue/vue2/5.虚拟dom&amp;diff.html" class="sidebar-link">虚拟dom&amp;diff算法</a></li><li><a href="/myBlog/document/vue/vue2/6.服务端渲染.html" class="sidebar-link">服务端渲染SSR</a></li><li><a href="/myBlog/document/vue/vue2/7.vue-router.html" class="sidebar-link">Vue-router功能详解</a></li><li><a href="/myBlog/document/vue/vue2/8.vue-cli3项目性能优化步骤.html" class="sidebar-link">vue-cli3项目性能优化步骤</a></li><li><a href="/myBlog/document/vue/vue2/9.keep-alive总结.html" class="sidebar-link">keep-alive 总结</a></li><li><a href="/myBlog/document/vue/vue2/10.vue组件库搭建.html" class="active sidebar-link">vue组件库搭建</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue3</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-58d5ab76 data-v-6666a783><h3 class="title" style="display:none;" data-v-58d5ab76 data-v-58d5ab76>vue组件库搭建</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><input type="password" value="" data-v-58d5ab76> <span data-v-58d5ab76>Konck! Knock!</span> <button data-v-58d5ab76>OK</button></label> <div class="footer" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><span data-v-58d5ab76><i class="iconfont reco-theme" data-v-58d5ab76></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-58d5ab76>vuePress-theme-reco</a></span> <span data-v-58d5ab76><i class="iconfont reco-copyright" data-v-58d5ab76></i> <a data-v-58d5ab76><span data-v-58d5ab76>前端小菜-贺俊兰</span>
+            
+          <!---->
+          2026
+        </a></span></div></div> <div data-v-6666a783><main class="page"><div class="page-img"><img src="/vuetimg2.jpeg"> <div class="page-title" style="display:none;"><h1>vue组件库搭建</h1> <div data-v-42458482><i class="iconfont reco-account" data-v-42458482><span data-v-42458482>前端小菜-贺俊兰</span></i> <i class="iconfont reco-date" data-v-42458482><span data-v-42458482>2021-10-18</span></i> <!----> <i class="iconfont reco-tag tags" data-v-42458482><span class="tag-item" data-v-42458482>VUE</span></i></div></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="初始化项目"><a href="#初始化项目" class="header-anchor">#</a> 初始化项目</h2> <p>项目文件夹内执行 npm init -y，执行成功目录结构如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ----------- // 项目文件夹名称
+└─package.json ---- // npm 配置文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="初始化目录结构"><a href="#初始化目录结构" class="header-anchor">#</a> 初始化目录结构</h2> <p>创建三个文件夹，分别是 build、packages、styles，和一个 index.js 文件。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ----------- // 项目文件夹名称
+├─build ----------- // webpack 配置文件夹
+├─index.js -------- // 入口文件
+├─package.json ---- // npm 配置文件
+├─packages -------- // 组件文件夹
+└─styles ---------- // 组件样式文件夹
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="配置公共-webpack-配置"><a href="#配置公共-webpack-配置" class="header-anchor">#</a> 配置公共 webpack 配置</h2> <p>在 build 文件夹内新建一个 webpack.base.js 文件。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ---------------- // 项目文件夹名称
+├─build ---------------- // webpack 配置文件夹
+│ └─webpack.base.js ---- // webpack 公共配置
+├─index.js ------------- // 入口文件
+├─package.json --------- // npm 配置文件
+├─packages ------------- // 组件文件夹
+└─styles --------------- // 组件样式文件夹
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> webpack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;webpack&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> VueLoaderPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;vue-loader/lib/plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.vue$/</span><span class="token punctuation">,</span>
+        loader<span class="token operator">:</span> <span class="token string">&quot;vue-loader&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.js$/</span><span class="token punctuation">,</span>
+        loader<span class="token operator">:</span> <span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">,</span>
+        exclude<span class="token operator">:</span> <span class="token regex">/node_modules/</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+        loaders<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            loader<span class="token operator">:</span> <span class="token string">&quot;style-loader&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            loader<span class="token operator">:</span> <span class="token string">&quot;css-loader&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/</span><span class="token punctuation">,</span>
+        loader<span class="token operator">:</span> <span class="token string">&quot;url-loader?limit=8192&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>optimize<span class="token punctuation">.</span>ModuleConcatenationPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">VueLoaderPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>npm i -D webpack webpack-cli vue-loader vue-template-compiler babel-loader @babel/core @babel/preset-env style-loader css-loader url-loader
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>因为装有 babel-loader ，得创建一个 .babelrc 的配置文件。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ---------------- // 项目文件夹名称
+├─.babelrc ------------- // babel 配置文件
+├─build ---------------- // webpack 配置文件夹
+│ └─webpack.base.js ---- // webpack 公共配置
+├─index.js ------------- // 入口文件
+├─package-lock.json ---- // package.json 安装的包的快照
+├─package.json --------- // npm 配置文件
+├─packages ------------- // 组件文件夹
+└─styles --------------- // 组件样式文件夹
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>并写入如下配置：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;presets&quot;: [
+    &quot;@babel/preset-env&quot;
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="编写两个简陋的组件"><a href="#编写两个简陋的组件" class="header-anchor">#</a> 编写两个简陋的组件</h2> <p>创建一个 button 组件和一个 link 组件。 目录结构如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ---------------- // 项目文件夹名称
+├─.babelrc ------------- // babel 配置文件
+├─build ---------------- // webpack 配置文件夹
+│ └─webpack.base.js ---- // webpack 公共配置
+├─index.js ------------- // 入口文件
+├─package-lock.json ---- // package.json 安装的包的快照
+├─package.json --------- // npm 配置文件
+├─packages ------------- // 组件文件夹
+│ ├─button ------------- // button 组件
+│ │ ├─index.js
+│ │ └─src
+│ │   └─main.vue
+│ └─link --------------- // link 组件
+│   ├─index.js
+│   └─src
+│     └─main.vue
+└─styles --------------- // 组件样式文件夹
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>组件的的目录结构借鉴了 element-ui ，方便 webpack 打包成按需加载的结构。</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>// packages/button/src/main.vue
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>my-button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Click<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;MyButton&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// packages/button/index.js</span>
+<span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">&quot;./src/main.vue&quot;</span><span class="token punctuation">;</span>
+
+Button<span class="token punctuation">.</span><span class="token function-variable function">install</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">Vue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>Button<span class="token punctuation">.</span>name<span class="token punctuation">,</span> Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Button<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-vue line-numbers-mode"><pre class="language-vue"><code>// packages/link/src/main.vue
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>my-link<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;MyLink&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// package/link/index.js</span>
+<span class="token keyword">import</span> Link <span class="token keyword">from</span> <span class="token string">&quot;./src/main.vue&quot;</span><span class="token punctuation">;</span>
+
+Link<span class="token punctuation">.</span><span class="token function-variable function">install</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">Vue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>Link<span class="token punctuation">.</span>name<span class="token punctuation">,</span> Link<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Link<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="custom-block tip"><p>每个组件都要有 name 属性。样式并没有写在 vue 文件内部，全部都单独写到了 styles 文件夹内。</p></div> <p>button 样式：</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">// styles/button.less
+.my-button</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> yellowgreen<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>link 样式：</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">// styles/link.less
+.my-link</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> blueviolet<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>入口文件 index.js 编写：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// index.js</span>
+<span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">&quot;./packages/button/index.js&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Link <span class="token keyword">from</span> <span class="token string">&quot;./packages/link/index.js&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> components <span class="token operator">=</span> <span class="token punctuation">[</span>Button<span class="token punctuation">,</span> Link<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">install</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">Vue<span class="token punctuation">,</span> opt <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  components<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">component</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>component<span class="token punctuation">.</span>name<span class="token punctuation">,</span> component<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> window <span class="token operator">!==</span> <span class="token string">&quot;undefined&quot;</span> <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>Vue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">install</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>Vue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  install<span class="token punctuation">,</span>
+  Button<span class="token punctuation">,</span>
+  Link<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>引入写好的组件，每个组件添加相应的 install 方法，这样注册组件的时候就可以使用 Vue.use() 进行注册。</p> <h2 id="配置完全引入-webpack-打包配置"><a href="#配置完全引入-webpack-打包配置" class="header-anchor">#</a> 配置完全引入 webpack 打包配置</h2> <p>目录结构：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ---------------- // 项目文件夹名称
+├─.babelrc ------------- // babel 配置文件
+├─build ---------------- // webpack 配置文件夹
+│ ├─webpack.base.js ---- // webpack 公共配置
+│ └─webpack.prod.js ---- // 全量打包 webpack 配置
+├─index.js ------------- // 入口文件
+├─lib
+│ └─index.js
+├─package-lock.json ---- // package.json 安装的包的快照
+├─package.json --------- // npm 配置文件
+├─packages ------------- // 组件文件夹
+│ ├─button ------------- // button 组件
+│ │ ├─index.js
+│ │ └─src
+│ │   └─main.vue
+│ └─link --------------- // link 组件
+│   ├─index.js
+│   └─src
+│     └─main.vue
+└─styles --------------- // 组件样式文件夹
+  ├─button.less
+  └─link.less
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// build/webpack.prod.js</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;webpack-merge&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> webpackBaseConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./webpack.base.js&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>webpackBaseConfig<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  mode<span class="token operator">:</span> <span class="token string">&quot;production&quot;</span><span class="token punctuation">,</span>
+  entry<span class="token operator">:</span> <span class="token punctuation">{</span>
+    main<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../index.js&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  output<span class="token operator">:</span> <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../lib&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    publicPath<span class="token operator">:</span> <span class="token string">&quot;/lib/&quot;</span><span class="token punctuation">,</span>
+    filename<span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+    library<span class="token operator">:</span> <span class="token string">&quot;my-library&quot;</span><span class="token punctuation">,</span>
+    libraryTarget<span class="token operator">:</span> <span class="token string">&quot;umd&quot;</span><span class="token punctuation">,</span>
+    umdNamedDefine<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    vue<span class="token operator">:</span> <span class="token punctuation">{</span>
+      root<span class="token operator">:</span> <span class="token string">&quot;Vue&quot;</span><span class="token punctuation">,</span>
+      commonjs<span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+      commonjs2<span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+      amd<span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>这里用到了 webpack-merge 这个工具，需要 npm 安装，这个工具主要以追加的形式合并 webpack 配置。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i -D webpack-merge
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p>以上配置大概就是合并了 webpack.base.js 里的 loader 配置，设置了入口文件，输出文件路径，并以 umd 的模式进行打包，把 vue 设置成外部依赖，不需要打包进输出文件内。再配置一下 package.json 的 script ，添加一条打包命令。</p></div> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my-library&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;build:prod&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config build/webpack.prod.js&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;@babel/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.10.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;@babel/preset-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.10.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;babel-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.5.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;style-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.2.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^15.9.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue-template-compiler&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.6.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.43.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.3.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack-merge&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.2.2&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>控制台执行 npm run build:prod 即可打包完成，打包完成后多出了一个 lib 文件夹，文件夹下有个 index.js 文件，这个文件就是全量组件的 js 文件。</p> <h2 id="组件的样式文件打包"><a href="#组件的样式文件打包" class="header-anchor">#</a> 组件的样式文件打包</h2> <p>组件的的逻辑代码已经完成，但是样式却没有，样式需要借助 gulp 进行打包处理，gulp 打包 css 比 webpack 的方便一些，所以选择了 gulp 。
+在 build 文件夹下新建一个 gen-style.js 文件。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ---------------- // 项目文件夹名称
+├─.babelrc ------------- // babel 配置文件
+├─build ---------------- // webpack 配置文件夹
+│ ├─gen-style.js ------- // gulp 打包样式配置
+│ ├─webpack.base.js ---- // webpack 公共配置
+│ └─webpack.prod.js ---- // 全量打包 webpack 配置
+├─index.js ------------- // 入口文件
+├─lib
+│ └─index.js
+├─package-lock.json ---- // package.json 安装的包的快照
+├─package.json --------- // npm 配置文件
+├─packages ------------- // 组件文件夹
+│ ├─button ------------- // button 组件
+│ │ ├─index.js
+│ │ └─src
+│ │   └─main.vue
+│ └─link --------------- // link 组件
+│   ├─index.js
+│   └─src
+│     └─main.vue
+└─styles --------------- // 组件样式文件夹
+  ├─button.less
+  └─link.less
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// build/gen-style.js</span>
+<span class="token keyword">const</span> gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> cleanCSS <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-clean-css&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> less <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-less&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> rename <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-rename&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> autoprefixer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-autoprefixer&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">buildCss</span><span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  gulp
+    <span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span><span class="token string">&quot;../styles/index.less&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">less</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">autoprefixer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">cleanCSS</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">rename</span><span class="token punctuation">(</span><span class="token string">&quot;index.css&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">&quot;../lib/styles&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+exports<span class="token punctuation">.</span>default <span class="token operator">=</span> gulp<span class="token punctuation">.</span><span class="token function">series</span><span class="token punctuation">(</span>buildCss<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>需要安装一下几个包，不喜欢用 less 的话，可以把 gulp-less 替换成自己想用的预处理器。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i -D gulp gulp-clean-css gulp-less gulp-rename gulp-autoprefixer
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>gen-style.js 文件中，有一个 buildCss 方法，这个方法就是把 styles/index.less 文件，打包成一个预处理好之后的 index.css 文件。gule 配置好，但是我们 styles 并没有 index.less 文件，先创建他并写入一些代码。</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code>// styles/index.less
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./button.less&quot;</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./link.less&quot;</span><span class="token punctuation">;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>全量加载组件的时候，就会用到这个 index.less 的样式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project ---------------- // 项目文件夹名称
+├─.babelrc ------------- // babel 配置文件
+├─build ---------------- // webpack 配置文件夹
+│ ├─gen-style.js ------- // gulp 打包样式配置
+│ ├─webpack.base.js ---- // webpack 公共配置
+│ └─webpack.prod.js
+├─index.js ------------- // 入口文件
+├─package-lock.json ---- // package.json 安装的包的快照
+├─package.json --------- // npm 配置文件
+├─packages ------------- // 组件文件夹
+│ ├─button ------------- // button 组件
+│ │ ├─index.js
+│ │ └─src
+│ │   └─main.vue
+│ └─link --------------- // link 组件
+│   ├─index.js
+│   └─src
+│     └─main.vue
+└─styles --------------- // 组件样式文件夹
+  ├─button.less
+  ├─index.less --------- // 全量加载使用时的样式
+  └─link.less
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>package.json 文件添加打包样式的命令。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;my-library&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;build:style&quot;: &quot;gulp --gulpfile build/gen-style.js&quot;,
+    &quot;build:prod&quot;: &quot;webpack --config build/webpack.prod.js&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;@babel/core&quot;: &quot;^7.10.2&quot;,
+    &quot;@babel/preset-env&quot;: &quot;^7.10.2&quot;,
+    &quot;babel-loader&quot;: &quot;^8.1.0&quot;,
+    &quot;css-loader&quot;: &quot;^3.5.3&quot;,
+    &quot;gulp&quot;: &quot;^4.0.2&quot;,
+    &quot;gulp-autoprefixer&quot;: &quot;^7.0.1&quot;,
+    &quot;gulp-clean-css&quot;: &quot;^4.3.0&quot;,
+    &quot;gulp-less&quot;: &quot;^4.0.1&quot;,
+    &quot;gulp-rename&quot;: &quot;^2.0.0&quot;,
+    &quot;style-loader&quot;: &quot;^1.2.1&quot;,
+    &quot;url-loader&quot;: &quot;^4.1.0&quot;,
+    &quot;vue-loader&quot;: &quot;^15.9.2&quot;,
+    &quot;vue-template-compiler&quot;: &quot;^2.6.11&quot;,
+    &quot;webpack&quot;: &quot;^4.43.0&quot;,
+    &quot;webpack-cli&quot;: &quot;^3.3.11&quot;,
+    &quot;webpack-merge&quot;: &quot;^4.2.2&quot;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p>使用 npm run build:style 命令试一下样式打包，正常打包。</p> <h2 id="按需加载打包（组件逻辑-样式打包）"><a href="#按需加载打包（组件逻辑-样式打包）" class="header-anchor">#</a> 按需加载打包（组件逻辑/样式打包）</h2> <p>全量加载完成了，接下来就是按需加载的打包配置了，先配置组件逻辑部分的打包，也是用到的 webpack 进行打包。
+在 build 文件夹下新建一个 webpack.component.js 文件和 components.json 文件，components.json 文件是用来记录组件的路径。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>project --------------------- // 项目文件夹名称
+├─.babelrc ------------------ // babel 配置文件
+├─build --------------------- // webpack 配置文件夹
+│ ├─components.json --------- // 组件路径文件
+│ ├─gen-style.js ------------ // gulp 打包样式配置
+│ ├─webpack.base.js --------- // webpack 公共配置
+│ ├─webpack.component.js ---- // 按需加载打包配置
+│ └─webpack.prod.js
+├─index.js ------------------ // 入口文件
+├─package-lock.json --------- // package.json 安装的包的快照
+├─package.json -------------- // npm 配置文件
+├─packages ------------------ // 组件文件夹
+│ ├─button ------------------ // button 组件
+│ │ ├─index.js
+│ │ └─src
+│ │   └─main.vue
+│ └─link -------------------- // link 组件
+│   ├─index.js
+│   └─src
+│     └─main.vue
+└─styles -------------------- // 组件样式文件夹
+  ├─button.less
+  ├─index.less -------------- // 全量加载使用时的样式
+  └─link.less
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token comment">// build/components.json</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;button&quot;</span><span class="token operator">:</span> <span class="token string">&quot;packages/button/index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;link&quot;</span><span class="token operator">:</span> <span class="token string">&quot;packages/link/index.js&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// build/webpack.component.js</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;webpack-merge&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> webpackBaseConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./webpack.base.js&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> components <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./components.json&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> basePath <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> entries <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>components<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  entries<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>basePath<span class="token punctuation">,</span> components<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>webpackBaseConfig<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  mode<span class="token operator">:</span> <span class="token string">&quot;production&quot;</span><span class="token punctuation">,</span>
+  entry<span class="token operator">:</span> entries<span class="token punctuation">,</span>
+  output<span class="token operator">:</span> <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../lib&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    publicPath<span class="token operator">:</span> <span class="token string">&quot;/lib/&quot;</span><span class="token punctuation">,</span>
+    filename<span class="token operator">:</span> <span class="token string">&quot;[name].js&quot;</span><span class="token punctuation">,</span>
+    chunkFilename<span class="token operator">:</span> <span class="token string">&quot;[id].js&quot;</span><span class="token punctuation">,</span>
+    libraryTarget<span class="token operator">:</span> <span class="token string">&quot;umd&quot;</span><span class="token punctuation">,</span>
+    umdNamedDefine<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    vue<span class="token operator">:</span> <span class="token punctuation">{</span>
+      root<span class="token operator">:</span> <span class="token string">&quot;Vue&quot;</span><span class="token punctuation">,</span>
+      commonjs<span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+      commonjs2<span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+      amd<span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><p>webpack.component.js 配置，合并了基础的配置，然后遍历 components.json 的组件路径，创建一个多入口文件的 webpack 配置，然后使用 umd 的打包方式把每个组件打包成一个 js 文件，跟 webpack.prod.js 一样，打包的时候不加入 vue 这个库。</p> <p>package.json 添加打包按需加载的命令。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my-library&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;build:style&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gulp --gulpfile build/gen-style.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;build:component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config build/webpack.component.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;build:prod&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config build/webpack.prod.js&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;@babel/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.10.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;@babel/preset-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.10.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;babel-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.5.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-autoprefixer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-clean-css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.3.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-less&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-rename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;style-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.2.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^15.9.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue-template-compiler&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.6.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.43.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.3.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack-merge&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.2.2&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>执行 npm run build:component 测试打包，打包正常。</p> <p>打包按需加载样式，只需要在 gen-style.js 文件内引入 components.json 文件和加一个新的处理方法即可。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> cleanCSS <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-clean-css&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> less <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-less&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> rename <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-rename&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> autoprefixer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-autoprefixer&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> components <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./components.json&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">buildCss</span><span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  gulp
+    <span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span><span class="token string">&quot;../styles/index.less&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">less</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">autoprefixer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">cleanCSS</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">rename</span><span class="token punctuation">(</span><span class="token string">&quot;index.css&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">&quot;../lib/styles&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">buildSeperateCss</span><span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>components<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">compName</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    gulp
+      <span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">../styles/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>compName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">.less</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">less</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">autoprefixer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">cleanCSS</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">rename</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>compName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">.css</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">&quot;../lib/styles&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+exports<span class="token punctuation">.</span>default <span class="token operator">=</span> gulp<span class="token punctuation">.</span><span class="token function">series</span><span class="token punctuation">(</span>buildCss<span class="token punctuation">,</span> buildSeperateCss<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>执行一下 npm run build:style 测试打包，打包成功。</p> <p>到这，全部打包配置已完成，可以开始自己的组件库编写之旅了。最后，添加一条一次完成所有命令的命令，只要执行一条命令，就可以把全部打包完成。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my-library&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;build:style&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gulp --gulpfile build/gen-style.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;build:component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config build/webpack.component.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;build:prod&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config build/webpack.prod.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;lib&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run build:prod &amp;&amp; npm run build:component &amp;&amp; npm run build:style&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;@babel/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.10.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;@babel/preset-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.10.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;babel-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.5.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-autoprefixer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-clean-css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.3.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-less&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gulp-rename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;style-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.2.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^15.9.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue-template-compiler&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.6.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.43.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.3.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack-merge&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.2.2&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>执行 npm run lib 即可全部打包完成。</p> <h2 id="npm-包的发布"><a href="#npm-包的发布" class="header-anchor">#</a> npm 包的发布</h2> <div class="custom-block tip"><ol><li>name 是包的名字，如果这个名字已经跟 npm 上的重复了，就自己改一下，不然是发布不了的。</li> <li>version 每次发布都需要修改一下版本号才能发布。</li> <li>main 入口设置成 lib/index.js 路径，也可以根据你打包的名字自己修改。</li> <li>files 设置上传到 npm 的文件或文件夹，一定要把打包好的 lib 文件上传，其他随意。</li></ol></div> <h2 id="使用组件库"><a href="#使用组件库" class="header-anchor">#</a> 使用组件库</h2> <p>npm i [name]</p> <p>全量引入</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> MyUI <span class="token keyword">from</span> <span class="token string">&quot;MyUI&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;MyUI/lib/styles/index.css&quot;</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>MyUI<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>MyUI 是发布 npm 包的名字。</p> <p>按需引入,先安装 babel-plugin-component：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install -D babel-plugin-component
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>配置 .babelrc 文件</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;presets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;@babel/preset-env&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;modules&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;component&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;libraryName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MyUI&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;libDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lib&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;styleLibrary&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;styles&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;base&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;[module].css&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>如果你打包的目录结构跟我这个是一样的话，秩序修改 libraryName 即可。</p> <p>使用组件：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Button<span class="token punctuation">,</span> Link <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;MyUI&quot;</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Link<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><canvas id="vuepress-canvas-ribbon"></canvas><canvas id="vuepress-canvas-cursor"></canvas><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 葵花宝典
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div></div></div></div>
+    <script src="/myBlog/assets/js/app.45a667c6.js" defer></script><script src="/myBlog/assets/js/3.d543a788.js" defer></script><script src="/myBlog/assets/js/1.3e1ffb60.js" defer></script><script src="/myBlog/assets/js/32.1681c8f8.js" defer></script>
+  </body>
+</html>
